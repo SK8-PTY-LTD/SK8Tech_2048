@@ -74,7 +74,7 @@ function play_in_english(){
   caption_garbage = "<span style='font-size:smaller'>Garbage</span>";
   window.game.actuate();
 
-  game_title = "PhD";
+  game_title = "StartUp";
   var titleElem = document.getElementById('title');
   if(titleElem.innerText != "Love") titleElem.innerText = game_title;
   document.getElementsByClassName('restart-button')[0].innerText = "Drop out";
@@ -152,7 +152,7 @@ function use_traditional(){
 
 function play_default(){
   window.removeEventListener('resize', update_captions, true);
-  game_title = "磗士";
+  game_title = "创业";
   var titleElem = document.getElementById('title');
   if(titleElem.innerText != "Love") titleElem.innerText = game_title;
 
