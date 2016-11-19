@@ -23,14 +23,14 @@ if (in_wechat) {
     document.getElementById('share-weixin').addEventListener('touchend', open_share);
     document.getElementById('share-weixin').style.display = "";
     document.getElementById('wx-notice').style.display = "";
-    document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>微信用户:</strong> 用浏览器打开, 可以将本游戏安装到手机桌面.<br>长按二维码关注作者公众号:<br><img src='wx-qrcode.jpg' width='100px'/>";
+    document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>微信用户:</strong> 用浏览器打开, 可以将本游戏安装到手机桌面.<br>长按二维码关注作者公众号:<br><img src='/wx-qrcode.png' width='100px'/>";
     disable_fb();
     var twButton = document.getElementsByClassName('share-tw')[0];
     twButton.parentNode.removeChild(twButton);
     ga('set', 'dimension1', 'wechat');
 } else {
     addToHomescreen({
-        appID: 'uk.ac.cam.cl.yf261.phd2048',
+        appID: '2048.sk8.tech',
         skipFirstVisit: true,
         maxDisplayCount: 1
     });

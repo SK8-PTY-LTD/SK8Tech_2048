@@ -41,7 +41,7 @@ function create_switch_en(){
   span_english.style.color = "white";
   span_english.style.cursor = "pointer";
   span_english.onclick = play_in_english;
-  span_english.innerText = "🇬🇧 Switch to English";
+  span_english.innerText = "Build my StartUp!";
   var container = document.getElementsByClassName('container')[0];
   container.insertBefore(span_english, container.firstChild);
 }
@@ -62,7 +62,7 @@ function create_switch(){
   span_default.style.color = "white";
   span_default.style.cursor = "pointer";
   span_default.onclick = play_default;
-  span_default.innerText = "中文版";
+  span_default.innerText = "我要创业!";
   var container = document.getElementsByClassName('container')[0];
   container.insertBefore(span_default, container.firstChild);
 }
@@ -74,10 +74,10 @@ function play_in_english(){
   caption_garbage = "<span style='font-size:smaller'>Garbage</span>";
   window.game.actuate();
 
-  game_title = "StartUp";
+  game_title = "StartUp!";
   var titleElem = document.getElementById('title');
   if(titleElem.innerText != "Love") titleElem.innerText = game_title;
-  document.getElementsByClassName('restart-button')[0].innerText = "Drop out";
+  document.getElementsByClassName('restart-button')[0].innerText = "StartUp Again!";
   document.getElementsByClassName('retry-button')[0].innerText = "Try again";
   document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>How to play:</strong> Use your <strong>arrow keys</strong> to move the bricks. When two bricks of the same type touch, they <strong>merge into one!</strong><br>However, your ideas and experiments may not always work &mdash; they may produce the sticky <strong>garbage</strong>, which is resistant to moves. Two garbage bricks vanish when they touch. You will stop producing garbage after getting a <strong>paper</strong> (except for one more piece to help you eliminate any existing garbage).<br>A <strong>relationship</strong> upgrades any brick it touches for the first time. The brick shows the number of times you have benefited from it. When the 10-sec relationship ends, it will become a <strong>break-up</strong> (or garbage if you didn't use it), which downgrades bricks until you have repaid the benefits.";
   document.getElementById('share-weixin').innerText = "Share on WeChat";
@@ -152,7 +152,7 @@ function use_traditional(){
 
 function play_default(){
   window.removeEventListener('resize', update_captions, true);
-  game_title = "创业";
+  game_title = "我要创业!";
   var titleElem = document.getElementById('title');
   if(titleElem.innerText != "Love") titleElem.innerText = game_title;
 

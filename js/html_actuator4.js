@@ -50,7 +50,7 @@ var captions = ["Coffee", "Panini",
   "想法", "代码", "<span style='display:inline-block;line-height:1.2;vertical-align:middle'>深度<br>学習</span>", "见导师",
   "实验", "Paper", "会议", "答辩", "PhD",
   "薄厚", "僵尸", "Reader", "叫兽"];
-var game_title = "创业";
+var game_title = "我要创业!";
 var caption_garbage = "垃圾";
 var captions_rel = ["恋爱", "分手"];
 
