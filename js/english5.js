@@ -1,37 +1,58 @@
-function update_captions(){
-  if(window.innerWidth < 520){
-    captions = ["Coffee", "Panini",
-      "Idea", "Code",
-      "<span style='display:inline-block;line-height:11px;vertical-align:middle'>Deep Learning</span>",
-      "<span style='font-size:11px;display:inline-block;line-height:11px;vertical-align:middle'>See Supervisor</span>",
-      "<span style='font-size:11px'>Experiment</span>", "Paper",
-      "<span style='font-size:11px'>Conference</span>", "Viva", "PhD",
-      "<span style='font-size:smaller'>Postdoc</span>",
-      "<span style='font-size:smaller'>Lecturer</span>", "Reader", "Prof."];
-    captions_rel = ["<span style='font-size:9px;'>Relationship</span>",
-      "<span style='font-size:11px;'>Break-up</span>"];
-  }
-  else{
-    captions = ["Coffee", "Panini",
-      "Idea", "Code",
-      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Deep Learning</span>",
-      "<span style='font-size:20px;display:inline-block;line-height:20px;vertical-align:middle'>See Supervisor</span>",
-      "<span style='font-size:20px'>Experiment</span>", "Paper",
-      "<span style='font-size:20px'>Conference</span>", "Viva", "PhD",
-      "<span style='font-size:smaller'>Postdoc</span>",
-      "<span style='font-size:smaller'>Lecturer</span>", "Reader", "Prof."];
-    captions_rel = ["<span style='font-size:15px;'>Relationship</span>",
-      "<span style='font-size:20px;'>Break-up</span>"];
+function update_captions() {
+  if (window.innerWidth < 520) {
+    captions = [
+      "Problem",
+      "<span style='font-size:10px;'>Opportunity</span>",
+      "<span style='font-size:11px;'>Innovation</span>",
+      "<span style='font-size:10px;'>Brainstorm</span>",
+      "Solution",
+      "Validation",
+      "Stratergy",
+      "<span style='font-size:10px;'>Production</span>",
+      "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>Product Launch</span>",
+      "Marketing",
+      "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>StartUp!</span>",
+      "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>Medium Business</span>",
+      "Enterprise",
+      "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>Household Brand</span>",
+      "NASDAQ!"
+    ];
+    captions_rel = [
+      "<span style='font-size:10px;'>Investment</span>",
+      "<span style='font-size:12px;'>Pressure</span>"
+    ];
+  } else {
+    captions = [
+      "Problem",
+      "<span style='font-size:18px;'>Opportunity</span>",
+      "<span style='font-size:19px;'>Innovation</span>",
+      "<span style='font-size:18px;'>Brainstorm</span>",
+      "Solution",
+      "<span style='font-size:20px;'>Validation</span>",
+      "Stratergy",
+      "<span style='font-size:18px;'>Production</span>",
+      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Product Launch</span>",
+      "Marketing",
+      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>StartUp Success!</span>",
+      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Medium Business</span>",
+      "Enterprise",
+      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Household Brand</span>",
+      "NASDAQ!"
+    ];
+    captions_rel = [
+      "<span style='font-size:18px;'>Investment</span>",
+      "Pressure"
+    ];
   }
 }
 
 var span_english;
 
-function create_switch_en(){
+function create_switch_en() {
   span_english = document.createElement('div');
   span_english.style.position = "absolute";
   span_english.style.top = "0";
-  if(window.innerWidth < 520)
+  if (window.innerWidth < 520)
     span_english.style.fontSize = "10px";
   else
     span_english.style.fontSize = "small";
@@ -48,11 +69,11 @@ function create_switch_en(){
 
 var span_default;
 
-function create_switch(){
+function create_switch() {
   span_default = document.createElement('div');
   span_default.style.position = "absolute";
   span_default.style.top = "0";
-  if(window.innerWidth < 520)
+  if (window.innerWidth < 520)
     span_default.style.fontSize = "10px";
   else
     span_default.style.fontSize = "small";
@@ -67,21 +88,21 @@ function create_switch(){
   container.insertBefore(span_default, container.firstChild);
 }
 
-function play_in_english(){
+function play_in_english() {
   update_captions();
   window.addEventListener('resize', update_captions, true);
-  
+
   caption_garbage = "<span style='font-size:smaller'>Garbage</span>";
   window.game.actuate();
 
   game_title = "StartUp!";
   var titleElem = document.getElementById('title');
-  if(titleElem.innerText != "Love") titleElem.innerText = game_title;
+  if (titleElem.innerText != "Love") titleElem.innerText = game_title;
   document.getElementsByClassName('restart-button')[0].innerText = "StartUp Again!";
-  document.getElementsByClassName('retry-button')[0].innerText = "Try again";
+  document.getElementsByClassName('retry-button')[0].innerText = "New StartUp";
   document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>How to play:</strong> Use your <strong>arrow keys</strong> to move the bricks. When two bricks of the same type touch, they <strong>merge into one!</strong><br>However, your ideas and experiments may not always work &mdash; they may produce the sticky <strong>garbage</strong>, which is resistant to moves. Two garbage bricks vanish when they touch. You will stop producing garbage after getting a <strong>paper</strong> (except for one more piece to help you eliminate any existing garbage).<br>A <strong>relationship</strong> upgrades any brick it touches for the first time. The brick shows the number of times you have benefited from it. When the 10-sec relationship ends, it will become a <strong>break-up</strong> (or garbage if you didn't use it), which downgrades bricks until you have repaid the benefits.";
   document.getElementById('share-weixin').innerText = "Share on WeChat";
-  document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>WeChat user:</strong> Add this game to your home screen by opening this page with the system browser.<br>Long press the QR code to follow me on WeChat:<br><img src='wx-qrcode.jpg' width='100px'/>";
+  document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>WeChat user:</strong> Add this game to your home screen by opening this page with the system browser.<br>Long press the QR code to follow me on WeChat:<br><img src='wx-qrcode.png' width='100px'/>";
 
   span_english.parentNode.removeChild(span_english);
   create_switch();
@@ -90,24 +111,22 @@ function play_in_english(){
 
 var zh_var = null;
 
-function determine_zh_var(){
-  if(zh_var) return zh_var;
+function determine_zh_var() {
+  if (zh_var) return zh_var;
   var hant_locales = ['zh-hant', 'zh-tw', 'zh-hk', 'zh-mo'];
   var nav_langs = navigator.languages;
-  if(nav_langs){
-    for(var i=0; i<nav_langs.length; i++){
-      if(nav_langs[i].startsWith('zh-')){
-        if(hant_locales.indexOf(nav_langs[i].toLowerCase()) >= 0){
+  if (nav_langs) {
+    for (var i = 0; i < nav_langs.length; i++) {
+      if (nav_langs[i].startsWith('zh-')) {
+        if (hant_locales.indexOf(nav_langs[i].toLowerCase()) >= 0) {
           zh_var = "hant";
           return "hant";
-        }
-        else break;
+        } else break;
       }
     }
-  }
-  else{
+  } else {
     var nav_lang = navigator.language || navigator.userLanguage;
-    if(hant_locales.indexOf(nav_lang.toLowerCase()) >= 0){
+    if (hant_locales.indexOf(nav_lang.toLowerCase()) >= 0) {
       zh_var = "hant";
       return "hant";
     }
@@ -116,28 +135,60 @@ function determine_zh_var(){
   return "hans";
 }
 
-function use_simplified(){
-  captions = ["Coffee", "Panini",
-    "想法", "代码", "<span style='display:inline-block;line-height:30px;vertical-align:middle'>深度<br>学習</span>", "见导师",
-    "实验", "Paper", "会议", "答辩", "PhD",
-    "薄厚", "僵尸", "Reader", "叫兽"];
-  captions_rel = ["恋爱", "分手"];
+function use_simplified() {
+  captions = [
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>痛点<br>需求</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>创新<br>机遇</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>概念<br>革新</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>头脑<br>风暴</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>解决<br>方案</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>市场<br>调研</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>战略<br>战术</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>产品<br>研发</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>营销<br>推广</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>销售<br>增长</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>创业<br>成功</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>中型<br>企业</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>行业<br>大佬</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>家喻<br>户晓</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>A股<br>上市</span>"
+  ];
+  captions_rel = [
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>风险<br>投资</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>亚历<br>山大</span>"
+  ];
   caption_garbage = "垃圾";
   window.game.actuate();
-  
+
   document.getElementsByClassName('restart-button')[0].innerText = "退学";
   document.getElementsByClassName('retry-button')[0].innerText = "善";
   document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>玩法:</strong> 使用方向键搬砖. 当两块相同的砖碰在一起时, <strong>它们会组成一块更好的砖</strong>! <br>但是, 你的想法和实验也可能只是产生<strong>垃圾</strong>. 黏着的垃圾会阻碍砖块的移动, 直到被别的垃圾击中而消失. 你得到 <strong>paper</strong> 以后便不会再产生垃圾, 最多再来一块帮你清除别的垃圾.<br><strong>恋爱</strong>砖触碰任何砖都能使其升级, 但一块砖只可享受一次. 恋爱砖上会显示你使用它的次数; 10 秒后它会变成<strong>分手</strong>砖, 触碰任何砖都能使其降级, 以此来偿还之前使用的次数.";
   document.getElementById('share-weixin').innerText = "发布到朋友圈";
-  document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>微信用户:</strong> 用浏览器打开, 可以将本游戏安装到手机桌面.<br>长按二维码关注作者公众号:<br><img src='wx-qrcode.jpg' width='100px'/>";
+  document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>微信用户:</strong> 用浏览器打开, 可以将本游戏安装到手机桌面.<br>长按二维码关注作者公众号:<br><img src='wx-qrcode.png' width='100px'/>";
 }
 
-function use_traditional(){
-  captions = ["Coffee", "Panini",
-    "想法", "原始碼", "<span style='display:inline-block;line-height:30px;vertical-align:middle'>深度<br>學習</span>", "見導師",
-    "實驗", "Paper", "會議", "答辯", "PhD",
-    "薄厚", "老屍", "Reader", "叫獸"];
-  captions_rel = ["戀愛", "分手"];
+function use_traditional() {
+  captions = [
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>痛点<br>需求</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>创新<br>机遇</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>概念<br>革新</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>头脑<br>风暴</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>解决<br>方案</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>市场<br>调研</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>战略<br>战术</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>产品<br>研发</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>营销<br>推广</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>销售<br>增长</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>创业<br>成功</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>中型<br>企业</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>行业<br>大佬</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>家喻<br>户晓</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>A股<br>上市</span>"
+  ];
+  captions_rel = [
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>风险<br>投资</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>亚历<br>山大</span>"
+  ];
   caption_garbage = "垃圾";
   window.game.actuate();
 
@@ -145,22 +196,21 @@ function use_traditional(){
   document.getElementsByClassName('retry-button')[0].innerText = "善";
   document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>玩法：</strong>用方向鍵搬磚。當兩塊相同的磚碰在一起時，<strong>它們會併成一塊更好的磚</strong>！<br>但是，你的想法和實驗可能只是產生<strong>垃圾</strong>而已。黏在地上的垃圾會阻礙磚塊移動，直到被別的垃圾擊中而消失。你得到 <strong>paper</strong> 以後便不會再產生垃圾，最多再出一塊幫你清除場上剩下的垃圾。<br><strong>戀愛</strong>磚觸碰任何磚都能使其升級，但一塊磚只得升級一次。戀愛磚上會顯示你用它的次數。10 秒後它會變成<strong>分手</strong>磚，觸碰任何磚都能使其降級，以此來償還之前使用的次數。";
   document.getElementById('share-weixin').innerText = "發佈到 WeChat";
-  document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>WeChat 使用者：</strong>用瀏覽器打開，可以將本遊戲添加到手機主熒幕。<br>長按 QR 碼訂閱作者的公眾號：<br><img src='wx-qrcode.jpg' width='100px'/>";
-  
+  document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>WeChat 使用者：</strong>用瀏覽器打開，可以將本遊戲添加到手機主熒幕。<br>長按 QR 碼訂閱作者的公眾號：<br><img src='wx-qrcode.png' width='100px'/>";
+
   document.body.style.fontFamily = '"Clear Sans", "Helvetica Neue", Arial, "Hiragino Sans CNS", "PingFang TC", "Microsoft JhengHei", "Source Han Sans TC", "Noto Sans CJK TC", sans-serif';
 }
 
-function play_default(){
+function play_default() {
   window.removeEventListener('resize', update_captions, true);
   game_title = "我要创业!";
   var titleElem = document.getElementById('title');
-  if(titleElem.innerText != "Love") titleElem.innerText = game_title;
+  if (titleElem.innerText != "Love") titleElem.innerText = game_title;
 
-  if(determine_zh_var() == 'hant') use_traditional();
+  if (determine_zh_var() == 'hant') use_traditional();
   else use_simplified();
 
   span_default.parentNode.removeChild(span_default);
   create_switch_en();
   window.game.storageManager.storage.setItem('lang', 'zh');
 }
-

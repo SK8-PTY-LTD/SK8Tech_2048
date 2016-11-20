@@ -15,8 +15,8 @@ function open_share() {
     sessionStorage.setItem('open-share', 'yes');
     var maxTile = window.game.maxTile;
     var page = maxTile.toString();
-    if (maxTile >= 2048) page = "phd";
-    else if (maxTile < 128) page = "cpgs";
+    if (maxTile >= 2048) page = "startup";
+    else if (maxTile < 128) page = "starter";
     window.location = "wx-" + page + ".html";
 }
 if (in_wechat) {
