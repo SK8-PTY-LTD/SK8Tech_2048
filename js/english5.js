@@ -56,7 +56,7 @@ function create_switch_en() {
     span_english.style.fontSize = "10px";
   else
     span_english.style.fontSize = "small";
-  span_english.style.backgroundColor = "#8f7a66";
+  span_english.style.backgroundColor = "#171c61";
   span_english.style.borderRadius = "0 0 3px 3px";
   span_english.style.padding = "3px 10px";
   span_english.style.color = "white";
@@ -77,7 +77,7 @@ function create_switch() {
     span_default.style.fontSize = "10px";
   else
     span_default.style.fontSize = "small";
-  span_default.style.backgroundColor = "#8f7a66";
+  span_default.style.backgroundColor = "#171c61";
   span_default.style.borderRadius = "0 0 3px 3px";
   span_default.style.padding = "3px 10px";
   span_default.style.color = "white";

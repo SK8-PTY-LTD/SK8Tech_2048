@@ -1,15 +1,45 @@
+/* Colors */
+html, body {
+  background: #fff;
+}
+.game-container .game-message a {
+  background: #171c61;
+}
+.restart-button {
+  background: #171c61;
+}
+.game-container .game-message a {
+  background: #171c61;
+}
+.score-container, .best-container {
+  background: #8991ff;
+}
+.score-container:after, .best-container:after {
+  color: #ffffff;
+}
+
+./*game-container {
+  background: #8991ff;
+}*/
+@/*media screen and (max-width:520px) {
+  .game-container {
+    background: #8991ff;
+  }
+}*/
+
+/* Fonts */
 h1.title {
-	font-size: 60px;
-	font-weight: bold;
-	margin: 0;
-	display: block;
-	float: left;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+  display: block;
+  float: left;
 }
 @media screen and (max-width:520px) {
-	h1.title {
-		font-size: 21px;
-		margin-top: 15px;
-	}
+  h1.title {
+    font-size: 21px;
+    margin-top: 15px;
+  }
 }
 .tile .tile-inner {
   font-size: 22px;
@@ -75,8 +105,8 @@ h1.title {
   }
 }
 hr {
-    border: none;
-    border-bottom: 1px solid #d8d4d0;
-    margin-top: 12px;
-    margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid #d8d4d0;
+  margin-top: 12px;
+  margin-bottom: 4px;
 }
