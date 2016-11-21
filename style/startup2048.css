@@ -1,6 +1,7 @@
 /* Colors */
 html, body {
-  background: #fff;
+  background: #ffffff;
+  color: #6e3b25;
 }
 .game-container .game-message a {
   background: #171c61;
@@ -8,14 +9,20 @@ html, body {
 .restart-button {
   background: #171c61;
 }
-.game-container .game-message a {
-  background: #171c61;
-}
 .score-container, .best-container {
-  background: #8991ff;
+  background: #5d63ad;
 }
 .score-container:after, .best-container:after {
   color: #ffffff;
+}
+.tile.tile-1 .tile-investment {
+  background: #44487f;
+}
+.tile.tile-1 .tile-mistake {
+  background: #a17fc7;
+}
+.tile.tile-0 .tile-inner {
+  background: #6e3b25;
 }
 
 ./*game-container {
@@ -37,8 +44,11 @@ h1.title {
 }
 @media screen and (max-width:520px) {
   h1.title {
-    font-size: 21px;
+    font-size: 24px;
     margin-top: 15px;
+  }
+  .score-container, .best-container {
+    font-size: 21px;
   }
 }
 .tile .tile-inner {

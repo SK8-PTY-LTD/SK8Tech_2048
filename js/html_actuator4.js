@@ -109,7 +109,10 @@ HTMLActuator.prototype.addTile = function(tile) {
 
   this.applyClasses(wrapper, classes);
 
-  inner.classList.add("tile-inner");
+  inner.classList.add("tile-inner")
+  if (window.game.relTime) inner.classList.add("tile-investment");
+    else inner.classList.add("tile-mistake");
+  
   inner.innerHTML = val2caption(tile.value);
 
   if (tile.previousPosition) {
@@ -223,6 +226,8 @@ HTMLActuator.prototype.refreshRel = function(remainingTime) {
       document.getElementById('progress').style.width = Math.round(200 * remainingTime / window.game.relDuration) + "px";
   } else {
     document.getElementById('title').textContent = game_title;
+    for (var i = 0; i < document.getElementsByClassName('tile-investment').length; i++) document.getElementsByClassName('tile-investment')[i].classList.add('tile-mistake');
+    for (var i = 0; i < document.getElementsByClassName('tile-mistake').length; i++) document.getElementsByClassName('tile-mistake')[i].classList.remove('tile-investment');
     document.getElementsByClassName('game-intro')[0].textContent = "Move the bricks to build your StartUp!";
     document.getElementById('progress').textContent = "";
     document.getElementById('progress').style.display = "none";
