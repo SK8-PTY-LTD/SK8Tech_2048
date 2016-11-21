@@ -171,7 +171,7 @@ HTMLActuator.prototype.updateScore = function(score) {
   if (difference > 0) {
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
-    addition.textContent = "-" + difference;
+    addition.textContent = "+" + difference;
 
     this.scoreContainer.appendChild(addition);
   }

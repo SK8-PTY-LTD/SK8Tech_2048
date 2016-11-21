@@ -3,6 +3,9 @@ html, body {
   background: #ffffff;
   color: #6e3b25;
 }
+a {
+  color: #5d63ad;
+}
 .game-container .game-message a {
   background: #171c61;
 }
@@ -24,6 +27,9 @@ html, body {
 .tile.tile-0 .tile-inner {
   background: #6e3b25;
 }
+.score-container .score-addition, .best-container .score-addition {
+  color: #171c61;
+}
 
 ./*game-container {
   background: #8991ff;
@@ -44,11 +50,11 @@ h1.title {
 }
 @media screen and (max-width:520px) {
   h1.title {
-    font-size: 24px;
+    font-size: 25px;
     margin-top: 15px;
   }
   .score-container, .best-container {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 .tile .tile-inner {
