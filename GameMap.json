@@ -1,0 +1,73 @@
+{
+	"name": "StartUp 2048",
+	"Level": {
+		"Problem": "痛点需求",
+		"Oppotunity": "创新机遇",
+		"Innovation": "概念革新",
+		"Brainstorm": "头脑风暴",
+		"Solution": "解决方案",
+		"Validation": "市场调研",
+		"Stratergy": "战略战术",
+		"Production": "产品研发",
+		"Marketing": "营销推广",
+		"Create Value": "销售增长",
+		"StartUp Success": "创业成功",
+		"Medium Business": "中型企业",
+		"Enterprise": "行业大佬",
+		"Household Brand": "家喻户晓",
+		"NASDAQ!": "A股上市"
+	}
+}, {
+	"name": "Build an app 2048",
+	"Level": {
+		"Problem": "痛点需求",
+		"Idea": "创新机遇",
+		"Brainstorm": "概念革新",
+		"Innovation": "头脑风暴",
+		"Prototype": "解决方案",
+		"Validation": "市场调研",
+		"Design": "战略战术",
+		"Develop": "产品研发",
+		"Debug": "营销推广",
+		"App live!": "销售增长",
+		"100 Users": "创业成功",
+		"Hosuehold App": "中型企业"
+	}
+}, {
+	"vocabs": [
+		"Problem"
+		"Idea"
+		"Brainstorm"
+		"Innovation"
+		"Prototype"
+		"Validation"
+		"Design"
+		"Develop"
+		"Debug"
+		"App live!"
+		"100 Users"
+		"Hosuehold App"
+		"Feedback"
+		"Improvements"
+
+		"Marketing"
+		"Partners"
+		"Scale"
+		"Branding"
+		"Go public"
+
+		"Business Model"
+		"Marketing"
+		"Scale"
+		"Branding"
+		"Go public"
+
+		"Sales"
+
+		"Mission"
+
+		"Partner
+		MVP "
+		"CEO"
+	]
+}

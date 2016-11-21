@@ -2,14 +2,14 @@ function update_captions() {
   if (window.innerWidth < 520) {
     captions = [
       "Problem",
+      "Potential",
       "<span style='font-size:10px;'>Opportunity</span>",
-      "<span style='font-size:11px;'>Innovation</span>",
       "<span style='font-size:10px;'>Brainstorm</span>",
+      "<span style='font-size:11px;'>Innovation</span>",
       "Solution",
       "Validation",
       "Stratergy",
       "<span style='font-size:10px;'>Production</span>",
-      "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>Product Launch</span>",
       "Marketing",
       "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>StartUp!</span>",
       "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>Medium Business</span>",
@@ -19,21 +19,21 @@ function update_captions() {
     ];
     captions_rel = [
       "<span style='font-size:10px;'>Investment</span>",
-      "<span style='font-size:12px;'>Pressure</span>"
+      "Mistake"
     ];
   } else {
     captions = [
       "Problem",
+      "Potential",
       "<span style='font-size:18px;'>Opportunity</span>",
-      "<span style='font-size:19px;'>Innovation</span>",
       "<span style='font-size:18px;'>Brainstorm</span>",
+      "<span style='font-size:19px;'>Innovation</span>",
       "Solution",
       "<span style='font-size:20px;'>Validation</span>",
       "Stratergy",
       "<span style='font-size:18px;'>Production</span>",
-      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Product Launch</span>",
       "Marketing",
-      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>StartUp Success!</span>",
+      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>StartUp!</span>",
       "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Medium Business</span>",
       "Enterprise",
       "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Household Brand</span>",
@@ -41,7 +41,7 @@ function update_captions() {
     ];
     captions_rel = [
       "<span style='font-size:18px;'>Investment</span>",
-      "Pressure"
+      "Mistake"
     ];
   }
 }
@@ -137,25 +137,25 @@ function determine_zh_var() {
 
 function use_simplified() {
   captions = [
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>痛点<br>需求</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>创新<br>机遇</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>概念<br>革新</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>头脑<br>风暴</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>解决<br>方案</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>市场<br>调研</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>战略<br>战术</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>产品<br>研发</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>营销<br>推广</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>销售<br>增长</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>创业<br>成功</span>",
+    "痛点",
+    "需求",
+    "机遇",
+    "讨论",
+    "创新",
+    "方案",
+    "调研",
+    "战略",
+    "研发",
+    "营销",
+    "创业",
     "<span style='display:inline-block;line-height:18px;vertical-align:middle'>中型<br>企业</span>",
     "<span style='display:inline-block;line-height:18px;vertical-align:middle'>行业<br>大佬</span>",
     "<span style='display:inline-block;line-height:18px;vertical-align:middle'>家喻<br>户晓</span>",
     "<span style='display:inline-block;line-height:18px;vertical-align:middle'>A股<br>上市</span>"
   ];
   captions_rel = [
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>风险<br>投资</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>亚历<br>山大</span>"
+    "风投",
+    "失误"
   ];
   caption_garbage = "垃圾";
   window.game.actuate();
@@ -169,25 +169,25 @@ function use_simplified() {
 
 function use_traditional() {
   captions = [
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>痛点<br>需求</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>创新<br>机遇</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>概念<br>革新</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>头脑<br>风暴</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>解决<br>方案</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>市场<br>调研</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>战略<br>战术</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>产品<br>研发</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>营销<br>推广</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>销售<br>增长</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>创业<br>成功</span>",
+    "痛点",
+    "需求",
+    "机遇",
+    "讨论",
+    "创新",
+    "方案",
+    "调研",
+    "战略",
+    "研发",
+    "营销",
+    "创业",
     "<span style='display:inline-block;line-height:18px;vertical-align:middle'>中型<br>企业</span>",
     "<span style='display:inline-block;line-height:18px;vertical-align:middle'>行业<br>大佬</span>",
     "<span style='display:inline-block;line-height:18px;vertical-align:middle'>家喻<br>户晓</span>",
     "<span style='display:inline-block;line-height:18px;vertical-align:middle'>A股<br>上市</span>"
   ];
   captions_rel = [
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>风险<br>投资</span>",
-    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>亚历<br>山大</span>"
+    "风投",
+    "失误"
   ];
   caption_garbage = "垃圾";
   window.game.actuate();

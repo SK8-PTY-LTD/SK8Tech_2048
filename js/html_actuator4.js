@@ -47,27 +47,27 @@ HTMLActuator.prototype.clearContainer = function(container) {
 };
 
 var captions = [
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>痛点<br>需求</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>创新<br>机遇</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>概念<br>革新</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>头脑<br>风暴</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>解决<br>方案</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>市场<br>调研</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>战略<br>战术</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>产品<br>研发</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>营销<br>推广</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>销售<br>增长</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>创业<br>成功</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>中型<br>企业</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>行业<br>大佬</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>家喻<br>户晓</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>A股<br>上市</span>"
+    "痛点",
+    "需求",
+    "机遇",
+    "讨论",
+    "创新",
+    "方案",
+    "调研",
+    "战略",
+    "研发",
+    "营销",
+    "创业",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>中型<br>企业</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>行业<br>大佬</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>家喻<br>户晓</span>",
+    "<span style='display:inline-block;line-height:18px;vertical-align:middle'>A股<br>上市</span>"
 ];
 var game_title = "我要创业!";
 var caption_garbage = "垃圾";
 var captions_rel = [
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>风险<br>投资</span>",
-  "<span style='display:inline-block;line-height:18px;vertical-align:middle'>亚历<br>山大</span>"
+    "风投",
+    "失误"
 ];
 
 var val2caption = function(val) {
