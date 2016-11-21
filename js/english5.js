@@ -102,7 +102,7 @@ function play_in_english() {
   document.getElementsByClassName('retry-button')[0].innerText = "New StartUp";
   document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>How to play:</strong> Use your <strong>arrow keys</strong> to move the bricks. When two bricks of the same type touch, they <strong>merge into one!</strong><br>However, your ideas and experiments may not always work &mdash; they may produce the sticky <strong>garbage</strong>, which is resistant to moves. Two garbage bricks vanish when they touch. You will stop producing garbage after getting a <strong>paper</strong> (except for one more piece to help you eliminate any existing garbage).<br>A <strong>relationship</strong> upgrades any brick it touches for the first time. The brick shows the number of times you have benefited from it. When the 10-sec relationship ends, it will become a <strong>break-up</strong> (or garbage if you didn't use it), which downgrades bricks until you have repaid the benefits.";
   document.getElementById('share-weixin').innerText = "Share on WeChat";
-  document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>WeChat user:</strong> Add this game to your home screen by opening this page with the system browser.<br>Long press the QR code to follow me on WeChat:<br><img src='wx-qrcode.png' width='100px'/>";
+  document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>WeChat user:</strong> Add this game to your home screen by opening this page with the system browser.<br>Long press the QR code to follow me on WeChat:<br><img src='wx-qrcode.png' width='100%'/>";
 
   span_english.parentNode.removeChild(span_english);
   create_switch();
@@ -160,11 +160,11 @@ function use_simplified() {
   caption_garbage = "垃圾";
   window.game.actuate();
 
-  document.getElementsByClassName('restart-button')[0].innerText = "退学";
+  document.getElementsByClassName('restart-button')[0].innerText = "再来";
   document.getElementsByClassName('retry-button')[0].innerText = "善";
   document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>玩法:</strong> 使用方向键搬砖. 当两块相同的砖碰在一起时, <strong>它们会组成一块更好的砖</strong>! <br>但是, 你的想法和实验也可能只是产生<strong>垃圾</strong>. 黏着的垃圾会阻碍砖块的移动, 直到被别的垃圾击中而消失. 你得到 <strong>paper</strong> 以后便不会再产生垃圾, 最多再来一块帮你清除别的垃圾.<br><strong>恋爱</strong>砖触碰任何砖都能使其升级, 但一块砖只可享受一次. 恋爱砖上会显示你使用它的次数; 10 秒后它会变成<strong>分手</strong>砖, 触碰任何砖都能使其降级, 以此来偿还之前使用的次数.";
   document.getElementById('share-weixin').innerText = "发布到朋友圈";
-  document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>微信用户:</strong> 用浏览器打开, 可以将本游戏安装到手机桌面.<br>长按二维码关注作者公众号:<br><img src='wx-qrcode.png' width='100px'/>";
+  document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>微信用户:</strong> 用浏览器打开, 可以将本游戏安装到手机桌面.<br>长按二维码关注作者公众号:<br><img src='wx-qrcode.png' width='100%'/>";
 }
 
 function use_traditional() {
@@ -192,7 +192,7 @@ function use_traditional() {
   caption_garbage = "垃圾";
   window.game.actuate();
 
-  document.getElementsByClassName('restart-button')[0].innerText = "退學";
+  document.getElementsByClassName('restart-button')[0].innerText = "再来";
   document.getElementsByClassName('retry-button')[0].innerText = "善";
   document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>玩法：</strong>用方向鍵搬磚。當兩塊相同的磚碰在一起時，<strong>它們會併成一塊更好的磚</strong>！<br>但是，你的想法和實驗可能只是產生<strong>垃圾</strong>而已。黏在地上的垃圾會阻礙磚塊移動，直到被別的垃圾擊中而消失。你得到 <strong>paper</strong> 以後便不會再產生垃圾，最多再出一塊幫你清除場上剩下的垃圾。<br><strong>戀愛</strong>磚觸碰任何磚都能使其升級，但一塊磚只得升級一次。戀愛磚上會顯示你用它的次數。10 秒後它會變成<strong>分手</strong>磚，觸碰任何磚都能使其降級，以此來償還之前使用的次數。";
   document.getElementById('share-weixin').innerText = "發佈到 WeChat";
