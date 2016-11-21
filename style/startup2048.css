@@ -7,7 +7,7 @@ h1.title {
 }
 @media screen and (max-width:520px) {
 	h1.title {
-		font-size: 24px;
+		font-size: 21px;
 		margin-top: 15px;
 	}
 }
@@ -73,4 +73,10 @@ h1.title {
   .tile.tile-super .tile-inner {
     font-size: 12px;
   }
+}
+hr {
+    border: none;
+    border-bottom: 1px solid #d8d4d0;
+    margin-top: 12px;
+    margin-bottom: 4px;
 }

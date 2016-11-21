@@ -162,7 +162,7 @@ function use_simplified() {
 
   document.getElementsByClassName('restart-button')[0].innerText = "再来";
   document.getElementsByClassName('retry-button')[0].innerText = "善";
-  document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>玩法:</strong> 使用方向键搬砖. 当两块相同的砖碰在一起时, <strong>它们会组成一块更好的砖</strong>! <br>但是, 你的想法和实验也可能只是产生<strong>垃圾</strong>. 黏着的垃圾会阻碍砖块的移动, 直到被别的垃圾击中而消失. 你得到 <strong>paper</strong> 以后便不会再产生垃圾, 最多再来一块帮你清除别的垃圾.<br><strong>恋爱</strong>砖触碰任何砖都能使其升级, 但一块砖只可享受一次. 恋爱砖上会显示你使用它的次数; 10 秒后它会变成<strong>分手</strong>砖, 触碰任何砖都能使其降级, 以此来偿还之前使用的次数.";
+  document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>玩法:</strong> 使用方向键搬砖. 当两块相同的砖碰在一起时, <strong>它们会组成一块更好的砖</strong>! <br>但是, 你的创新和方案也可能只是产生<strong>垃圾</strong>. 黏着的垃圾会阻碍砖块的移动, 直到被别的垃圾击中而消失. 你得到 <strong>战略</strong> 以后便不会再产生垃圾, 最多再来一块帮你清除别的垃圾.<br><strong>投资</strong>砖触碰任何砖都能使其升级, 但一块砖只可享受一次. 投资砖上会显示你使用它的次数; 10 秒后它会变成<strong>失误</strong>砖, 触碰任何砖都能使其降级, 以此来偿还之前使用的次数.";
   document.getElementById('share-weixin').innerText = "发布到朋友圈";
   document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>微信用户:</strong> 用浏览器打开, 可以将本游戏安装到手机桌面.<br>长按二维码关注作者公众号:<br><img src='wx-qrcode.png' width='100%'/>";
 }
@@ -194,8 +194,8 @@ function use_traditional() {
 
   document.getElementsByClassName('restart-button')[0].innerText = "再来";
   document.getElementsByClassName('retry-button')[0].innerText = "善";
-  document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>玩法：</strong>用方向鍵搬磚。當兩塊相同的磚碰在一起時，<strong>它們會併成一塊更好的磚</strong>！<br>但是，你的想法和實驗可能只是產生<strong>垃圾</strong>而已。黏在地上的垃圾會阻礙磚塊移動，直到被別的垃圾擊中而消失。你得到 <strong>paper</strong> 以後便不會再產生垃圾，最多再出一塊幫你清除場上剩下的垃圾。<br><strong>戀愛</strong>磚觸碰任何磚都能使其升級，但一塊磚只得升級一次。戀愛磚上會顯示你用它的次數。10 秒後它會變成<strong>分手</strong>磚，觸碰任何磚都能使其降級，以此來償還之前使用的次數。";
-  document.getElementById('share-weixin').innerText = "發佈到 WeChat";
+  document.getElementsByClassName('game-explanation')[0].innerHTML = "<strong class='important'>玩法:</strong> 使用方向键搬砖. 当两块相同的砖碰在一起时, <strong>它们会组成一块更好的砖</strong>! <br>但是, 你的创新和方案也可能只是产生<strong>垃圾</strong>. 黏着的垃圾会阻碍砖块的移动, 直到被别的垃圾击中而消失. 你得到 <strong>战略</strong> 以后便不会再产生垃圾, 最多再来一块帮你清除别的垃圾.<br><strong>投资</strong>砖触碰任何砖都能使其升级, 但一块砖只可享受一次. 投资砖上会显示你使用它的次数; 10 秒后它会变成<strong>失误</strong>砖, 触碰任何砖都能使其降级, 以此来偿还之前使用的次数.";
+  document.getElementById('share-weixin').innerText = "发布到朋友圈";
   document.getElementById('wx-notice').innerHTML = "<br><strong class='important'>WeChat 使用者：</strong>用瀏覽器打開，可以將本遊戲添加到手機主熒幕。<br>長按 QR 碼訂閱作者的公眾號：<br><img src='wx-qrcode.png' width='100px'/>";
 
   document.body.style.fontFamily = '"Clear Sans", "Helvetica Neue", Arial, "Hiragino Sans CNS", "PingFang TC", "Microsoft JhengHei", "Source Han Sans TC", "Noto Sans CJK TC", sans-serif';
