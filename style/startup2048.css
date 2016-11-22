@@ -1,45 +1,3 @@
-/* Colors */
-html, body {
-  background: #ffffff;
-  color: #6e3b25;
-}
-a {
-  color: #5d63ad;
-}
-.game-container .game-message a {
-  background: #171c61;
-}
-.restart-button {
-  background: #171c61;
-}
-.score-container, .best-container {
-  background: #5d63ad;
-}
-.score-container:after, .best-container:after {
-  color: #ffffff;
-}
-.tile.tile-1 .tile-investment {
-  background: #44487f;
-}
-.tile.tile-1 .tile-mistake {
-  background: #a17fc7;
-}
-.tile.tile-0 .tile-inner {
-  background: #6e3b25;
-}
-.score-container .score-addition, .best-container .score-addition {
-  color: #171c61;
-}
-
-./*game-container {
-  background: #8991ff;
-}*/
-@/*media screen and (max-width:520px) {
-  .game-container {
-    background: #8991ff;
-  }
-}*/
-
 /* Fonts */
 h1.title {
   font-size: 60px;
@@ -126,3 +84,45 @@ hr {
   margin-top: 12px;
   margin-bottom: 4px;
 }
+
+/* Colors */
+html, body {
+  background: #ffffff;
+  color: #6e3b25;
+}
+a {
+  color: #5d63ad;
+}
+.game-container .game-message a {
+  background: #171c61;
+}
+.restart-button {
+  background: #171c61;
+}
+.score-container, .best-container {
+  background: #5d63ad;
+}
+.score-container:after, .best-container:after {
+  color: #ffffff;
+}
+.tile.tile-1 .tile-investment {
+  background: #44487f;
+}
+.tile.tile-1 .tile-mistake {
+  background: #a17fc7;
+}
+.tile.tile-0 .tile-inner {
+  background: #6e3b25;
+}
+.score-container .score-addition, .best-container .score-addition {
+  color: #171c61;
+}
+
+./*game-container {
+  background: #8991ff;
+}*/
+/*media screen and (max-width:520px) {
+  .game-container {
+    background: #8991ff;
+  }
+}*/

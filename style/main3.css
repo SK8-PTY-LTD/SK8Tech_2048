@@ -100,7 +100,7 @@ h1.title {
   animation-fill-mode: both;
 }
 .score-container:after {
-  content: "Hair loss";
+  content: "Money";
 }
 .best-container:after {
   content: "Max";
@@ -697,7 +697,7 @@ hr {
     min-width: 47px;
   }
   .score-container:after {
-    content: "Hair loss";
+    content: "Money";
     font-size: 11px;
   }
   .best-container:after {
