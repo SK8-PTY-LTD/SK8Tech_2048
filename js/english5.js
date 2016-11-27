@@ -11,7 +11,7 @@ function update_captions() {
       "Stratergy",
       "<span style='font-size:10px;'>Production</span>",
       "Marketing",
-      "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>StartUp!</span>",
+      "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>StartUp</span>",
       "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>Medium Business</span>",
       "Enterprise",
       "<span style='font-size:12px;display:inline-block;line-height:24px;vertical-align:middle'>Household Brand</span>",
@@ -33,7 +33,7 @@ function update_captions() {
       "Stratergy",
       "<span style='font-size:18px;'>Production</span>",
       "Marketing",
-      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>StartUp!</span>",
+      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>StartUp</span>",
       "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Medium Business</span>",
       "Enterprise",
       "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Household Brand</span>",
@@ -62,7 +62,7 @@ function create_switch_en() {
   span_english.style.color = "white";
   span_english.style.cursor = "pointer";
   span_english.onclick = play_in_english;
-  span_english.innerText = "Build my StartUp!";
+  span_english.innerText = "Build my StartUp";
   var container = document.getElementsByClassName('container')[0];
   container.insertBefore(span_english, container.firstChild);
 }
@@ -95,7 +95,7 @@ function play_in_english() {
   caption_garbage = "<span style='font-size:smaller'>Garbage</span>";
   window.game.actuate();
 
-  game_title = "StartUp!";
+  game_title = "StartUp";
   var titleElem = document.getElementById('title');
   if (titleElem.innerText != "Love") titleElem.innerText = game_title;
   document.getElementsByClassName('restart-button')[0].innerText = "StartUp Again!";
